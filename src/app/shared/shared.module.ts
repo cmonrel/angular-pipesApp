@@ -4,12 +4,14 @@ import { CommonModule } from '@angular/common';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 import { MenuComponent } from './components/menu/menu.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 
 
 @NgModule({
   declarations: [
     MenuComponent,
+    ToolbarComponent,
   ],
   imports: [
     CommonModule,
@@ -17,6 +19,7 @@ import { MenuComponent } from './components/menu/menu.component';
   ],
   exports: [
     MenuComponent,
+    ToolbarComponent,
   ]
 })
 export class SharedModule { }

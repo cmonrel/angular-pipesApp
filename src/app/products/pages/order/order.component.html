@@ -1,0 +1,19 @@
+<p-panel header="Pipes personalizados" class="p-1">
+  <h1>Pipes Personalizados</h1>
+  <p>
+    Pipes personalizados - creados por {{ 'nosotros' | toggleCase:isUpperCase }}
+  </p>
+
+  <shared-toolbar
+    (onToggle)="toggleUpperCase()"
+    (sortBy)="sortBy($event)"
+    class="p-1"
+  ></shared-toolbar>
+
+  <div class="grid">
+    <div class="col mt-2">
+      <products-order-table [sort]="sortOption"></products-order-table>
+    </div>
+  </div>
+
+</p-panel>

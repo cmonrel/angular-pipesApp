@@ -1,0 +1,10 @@
+<p-toolbar>
+  <div class="p-toolbar-group-start">
+      <button pButton (click)="onToggleClick()" label="ToggleCase" icon="pi pi-search" class="mr-2"></button>
+  </div>
+  <div class="p-toolbar-group-end">
+    <button pButton (click)="onSortClick('name')" label="By Name" icon="pi pi-sort" class="mr-2"></button>
+    <button pButton (click)="onSortClick('canFly')" label="Can Fly" icon="pi pi-sort" class="mr-2"></button>
+    <button pButton (click)="onSortClick('color')" label="By Color" icon="pi pi-sort" class="mr-2"></button>
+  </div>
+</p-toolbar>
